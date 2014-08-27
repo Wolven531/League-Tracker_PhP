@@ -1,0 +1,45 @@
+<form method="post" action="#" id="registerForm" action="#">
+    <table class="bordered table">
+        <tr>
+            <td>
+                <label for="username">Summoner Name</label>
+            </td>
+            <td>
+                <div class="input-control text">
+                    <input type="text" name="username" id="username" placeholder="Summoner Name" />
+                    <button class="btn-clear" tabindex="-1" type="button"></button>
+                </div>
+            </td>
+        </tr>
+        <!-- Maybe add in future
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input type="email" name="email" id="email" placeholder="Email" />
+            </td>
+        </tr>
+        -->
+        <tr>
+            <td>
+                <label for="password">Password</label>
+            </td>
+            <td>
+                <div class="input-control password">
+                    <input type="password" name="password" id="password" placeholder="Password" />
+                    <button class="btn-reveal"></button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Register" />
+            </td>
+        </tr>
+    </table>
+    <div>
+        <p>Note: Password must be alphanumeric only with eight (8) or more characters.</p>
+        <p>[Does NOT have to match League password]</p>
+    </div>
+</form>
