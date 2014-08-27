@@ -1,0 +1,485 @@
+body {
+    background-color: #000;
+    margin-bottom: 50px;
+    text-align: center;
+    /*background-image: url('./flower.png');*/
+    background-repeat: no-repeat;
+}
+
+.content,
+.nav,
+.footer {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #dadadb;
+}
+.content {
+    display: inline-block;
+    padding: 15px 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    box-shadow: #fff 0.1em 0.1em 2.5em;
+}
+
+.nav {
+    padding: 5px;
+    min-width: 470px;
+    background-color: transparent;
+    color: #b4fff7;
+}
+
+.footer {
+    margin-top: 25px;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+h3, h2 {
+    color: #00ff00;
+    text-shadow: #00ff00 0.1em 0.1em 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+}
+
+.note {
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+}
+
+fieldset {
+    width: 214px;
+}
+
+.invalid {
+    border: 2px solid #ff0000;
+    background: #ffeeee;
+    color: #ff0000;
+}
+
+.error-msg,
+.success-msg {
+    display: none;
+}
+
+.success-msg {
+    border: 2px solid #00aa00;
+    background: #ccffcc;
+    color: #00aa00;
+    padding: 5px;
+}
+
+.error-msg {
+    border: 2px solid #ff0000;
+    background: #ffeeee;
+    color: #ff0000;
+    padding: 5px;
+}
+
+table, #loginForm {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#loginForm {
+    width: 242px;
+}
+
+table,
+table tr,
+table th,
+table td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: center;
+}
+
+table td {
+    text-align: right;
+}
+
+table th,
+table td {
+    padding: 5px;
+}
+
+.no-games {
+    text-align: center;
+}
+
+.kills,
+.win {
+    color: #007700;
+}
+
+.deaths,
+.loss {
+    color: #aa0000;
+}
+
+.assists {
+    color: #000099;
+}
+
+.gold {
+    color: #d8ad26;
+}
+
+.nav a,
+.nav a:visited,
+.nav a:hover,
+.nav a:active {
+    text-decoration: none;
+    color: #b4fff7;
+    padding: 5px;
+}
+
+.nav img {
+    vertical-align: middle;
+}
+
+#game_level,
+#game_type,
+#loginForm input[type="submit"],
+#registerForm input[type="submit"],
+#champ_select,
+#victory,
+#summ_role,
+#changePasswordForm input[type="submit"] {
+    width: 100%;
+}
+
+.img-container {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#champSelectImg {
+    width: 120px;
+    height: 120px;
+}
+
+.updates ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.updates ul li {
+    padding-left: 15px;    
+}
+
+#origPassword,
+#newPassword,
+#newPasswordConfirm {
+    width: 150px;
+}
+
+.champ-stat-table {
+    width: 700px;
+}
+
+.champ-stat-table .bold {
+    font-weight: bold;
+    text-align: left;
+}
+
+.overall-table {
+    margin-bottom: 15px;
+}
+/*
+ API styles
+ * */
+
+.api-stat-label {
+    width: 122px;
+    text-align: left;
+    display: inline-block;
+}
+
+.api-stat-quantity {
+    width: 50px;
+    text-align: right;
+    display: inline-block;
+}
+
+.api-stat-quantity.long {
+    width: 100px;
+}
+
+.condensed {
+    width: 75px;
+}
+
+.api-stat-label.condensed {
+    width: 50px;
+}
+
+.p-r-0 { padding-right: 0; }
+.p-l-0 { padding-left: 0; }
+.p-0 { padding: 0; }
+.m-r-0 { margin-right: 0; }
+.m-l-0 { margin-left: 0; }
+.m-0 { margin: 0; }
+
+.m-r-5 { margin-right: 5px; }
+.m-l-5 { margin-left: 5px; }
+.m-5 { margin: 5px; }
+.m-r-10 { margin-right: 10px; }
+.m-l-10 { margin-left: 10px; }
+.m-10 { margin: 10px; }
+
+.p-r-5 { padding-right: 5px; }
+.p-l-5 { padding-left: 5px; }
+.p-5 { padding: 5px; }
+.p-r-10 { padding-right: 10px; }
+.p-l-10 { padding-left: 10px; }
+.p-10 { padding: 10px; }
+
+.w-20 { width: 85px; }
+.w-100 { width: 100%; }
+.b-0 { border: none; }
+
+.api-stat-table ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.api-stat-table {
+    margin: 10px;
+}
+
+.api-stat-table .champ {
+    text-align: left;
+}
+
+.api-stat-header {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    margin: 0 0 5px 0;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.api-stat-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+    -webkit-appearance:none;
+    -webkit-padding-start: 0;
+}
+
+.api-stat-list li {
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-appearance:none;
+}
+
+.api-stat-cell {
+    padding: 0;
+}
+
+.invis {
+    display: none;
+}
+
+.api-stat-game {
+    position: relative;
+    z-index: 0;
+}
+
+.api-stat-game h4 {
+    width: 100%;
+    text-align: center;
+}
+
+.api-indiv-stat {
+    width: 100%;
+    text-align: left;
+}
+
+.api-items-container {
+    width: 100%;
+    text-align:center;
+}
+
+.api-item-image {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    position: relative;
+    z-index: 0;
+}
+
+.api-item-info {
+    display: none;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #6b6b6b;
+    padding: 5px;
+    background-color: #1c1c1e;
+    color: #eee;
+    width: 300px;
+}
+
+.api-item-info .cost {
+    color: #aaa;
+}
+
+.api-item-info br {
+    display: none;
+}
+
+.api-item-info .stats br {
+    display: block;
+}
+
+.api-item-info .stats i,
+.api-item-info .cost i {
+    font-style: normal;
+}
+
+.api-item-info .stats,
+.api-item-info .unique,
+.api-item-info .groupLimit,
+.api-item-info .active {
+    margin: 5px 0;
+}
+
+.api-item-info .unique {
+    display: inline-block;
+}
+
+.api-item-info .description {
+    margin-top: 5px;
+}
+
+.api-item-info i {
+    display: block;
+    margin-top: 10px;
+}
+
+.api-item-info .sell {
+    color:#dd0000;
+}
+
+.close {
+    border: 1px solid #000;
+    background-color: #f00;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    float: right;
+}
+
+.small-champ-img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.large-champ-img {
+    width: 120px;
+    height: 120px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+}
+
+.champ-img-container {
+    text-align: center;
+}
+
+#registerForm div {
+    width: 200px;
+    display: inline-block;
+}
+
+#registerForm {
+    display: inline-block;
+}
+
+.profile-link {
+    text-decoration: none;
+}
+
+.api-champ-stats-individual,
+.api-awards {
+    margin : 10px;
+}
+
+.api-champ-stats-individual ul {
+    list-style-type: none;
+}
+
+.api-kda-table {
+    margin: 10px;
+}
+
+.user-highlight {
+    background-color: #ffff00;
+}
+
+.ui-widget .ui-dialog-titlebar .ui-dialog-title {
+    font-size: 14px;;
+}
+
+.ui-button-text {
+    font-size: 12px;
+    
+}
+
+.ui-dialog.ui-widget-content,
+.ui-dialog-buttonpane {
+    background: none;
+    background-color: #1c1c1e;
+}
+
+.ui-widget-overlay {
+    background: none;
+    background-color: rgba(0,0,0,.5);
+    opacity: 1;
+}
+
+.ui-dialog-titlebar-close {
+    display: none;
+}
+
+#register-confirm-modal {
+    display: none;
+    z-index: 1;
+    background-color: #1c1c1e;
+    font-size: 12px;
+    color: #eee;
+    width: 800px;
+}
+
+.emphasized {
+    font-style: italic;
+    font-weight: bold;
+    color: #aaaa00;
+}
