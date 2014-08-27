@@ -1,0 +1,127 @@
+<form method="post" action="#" id="addForm" action="#">
+    <table>
+        <tr>
+            <td>
+                <label for="game_type">Game Type</label>
+            </td>
+            <td>
+                <select name="game_type" id="game_type">
+                    <option value="1">Summoner's Rift</option>
+                    <option value="2">Twisted Treeline</option>
+                    <option value="3" selected="selected">ARAM</option>
+                    <option value="4">Dominion</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="game_level">Game Level</label>
+            </td>
+            <td>
+                <select name="game_level" id="game_level">
+                    <option value="1" selected="selected">Normal</option>
+                    <option value="2">Ranked</option>
+                    <option value="3">Custom</option>
+                </select>
+            </td>
+        </tr
+        <tr>
+            <td>
+                <label for="victory">Outcome</label>
+            </td>
+            <td>
+                <select name="victory" id="victory">
+                    <option value="0" selected="selected">Loss</option>
+                    <option value="1">Win</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="champ_select">Champion Select</label>
+            </td>
+            <td>
+                <select name="champ_select" id="champ_select">
+                    
+                </select>
+                <div class="img-container">
+                    <img src="./question_mark.png" id="champSelectImg" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="summ_role">Summoner Role</label>
+            </td>
+            <td>
+                <select name="summ_role" id="summ_role">
+                    <option value="-1" selected="selected">N/A</option>
+                    <option value="0">AP Carry</option>
+                    <option value="5">AP Bruiser</option>
+                    <option value="1">AD Carry</option>
+                    <option value="6">AD Bruiser</option>
+                    <option value="2">Jungle</option>
+                    <option value="3">Tank</option>
+                    <option value="4">Support</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="kills">Kills</label>
+            </td>
+            <td>
+                <input type="text" name="kills" id="kills" placeholder="0" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="deaths">Deaths</label>
+            </td>
+            <td>
+                <input type="text" name="deaths" id="deaths" placeholder="0" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="assists">Assists</label>
+            </td>
+            <td>
+                <input type="text" name="assists" id="assists" placeholder="0" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gold">Gold</label>
+            </td>
+            <td>
+                <input type="text" name="gold" id="gold" placeholder="0" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="minions">Minions</label>
+            </td>
+            <td>
+                <input type="text" name="minions" id="minions" placeholder="0" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="date">Date (mm/dd/yyyy)</label>
+            </td>
+            <td>
+                <input type="text" name="date" id="date" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Add Game" />
+            </td>
+            <td>
+                <span class="error-msg">There was an error adding the game</span>
+                <span class="success-msg">Game successfully added</span>
+            </td>
+        </tr>
+    </table>
+</form>
